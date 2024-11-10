@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 2 Laboratorio 10</title>
+</head>
+<body>
+    <script>
+        let a;
+        let b;
+        a = prompt("Ingresa el primer valor");
+        b = prompt("Ingresa el segundo valor");
+  
+        //convierto estos valores a número
+        a=parseInt(a);
+        b=parseInt(b);
+  
+        //operaciones básicas        
+        let suma=a+b;
+        let resta=a-b;
+        let multi=a*b;
+        let division=a/b;
+
+        //salidas por consola y por pantalla
+        console.log(suma, resta, multi, division);
+        document.write("..",suma,"..",resta,"..","..",multi,"..",division);
+        
+        
+
+        //hacemos comparaciones
+        document.write('<br>');
+        document.write('<br>');
+        document.write(a," es igual a ",b," ",a==b);
+
+        document.write('<br>');
+        document.write('<br>');
+        document.write(a," es diferente a ",b," ",a!=b);
+
+        document.write('<br>');
+        document.write('<br>');
+        document.write(a," es mayor a ",b," ",a>b);
+
+        document.write('<br>');
+        document.write('<br>');
+        document.write(a," es menos a ",b," ",a<b);
+
+        document.write('<br>');
+        document.write('<br>');
+        document.write(a," es mayor o igual a ",b," ",a>=b);
+
+        document.write('<br>');
+        document.write('<br>');
+        document.write(a," es menor o igual a ",b," ",a<=b);
+
+        console.log(a==b,a!=b,a>b,a<b,a>=b,a<=b);
+
+    </script>
+    
+</body>
+</html>

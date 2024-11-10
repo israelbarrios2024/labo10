@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 3 Laboratorio 10</title>
+</head>
+<body>
+    <script>
+        
+        let persona = prompt("ingresa tu nombre... ");
+        let mensaje;
+        let esMayorDeEdad=true;
+        let tieneLicencia=true;
+        let puedeConducir = esMayorDeEdad && tieneLicencia;
+        /* para que una persona en colombia pueda conducir
+        debe tener licencia
+        los menores de edad si tienen el permiso y la
+        licencia pueden conducir */
+
+        console.log(puedeConducir);
+
+        if (puedeConducir === true)
+        {
+            mensaje = `hola ${persona} te comento que tu estado para conducir es... Aprobado`;        
+
+        }
+        else{
+            mensaje = `hola ${persona} te comento que tu estado para conducir es... No Aprobado`;        
+        }
+
+
+
+        //let mensaje = `hola ${persona} te comento que tu estado para conducir es... ${puedeConducir}`;        
+        console.log(mensaje);
+        document.write(mensaje);
+
+
+    </script>
+    
+</body>
+</html>
